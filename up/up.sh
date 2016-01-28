@@ -6,10 +6,12 @@ if [[ $1 == "--help" ]]; then
 fi
 if [[ -z $1 ]]; then # No arguments given
     cd ..
+elif [[ $1 == "/" ]]; then # Jump to root
+    cd /
 elif [[ $1 =~ ^[0-9]+$ ]]; then # Argument is a number
     for (( i=0; i<$1; i++ )); do
         if [[ $PWD == '/' ]]; then
-            return 0; #Top level
+            return 0; # Top level
         fi
         cd ..
     done 
