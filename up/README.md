@@ -16,7 +16,7 @@ Command | Final working directory | Explanation
 `up 3` | `/home/d-sheep/source/Webs` | Numeric argument means length of the jump
 `up source` | `/home/d-sheep/source` | Textual argument finds a folder with a matching name
 `up sour` | `/home/d-sheep/source` | It actually looks for folders starting with the argument
-`up s` | `/home/d-sheep/source/Webs/myApp/src` | Ambigual match results in the shortest possible jump
+`up s` | `/home/d-sheep/source/Webs/myApp/src` | Ambiguous match results in the shortest possible jump
 `up dev` | `/home/d-sheep/source/Webs/myApp/src/img` | Unsuccessful match does not trigger a jump
 `up webs` | `/home/d-sheep/source/Webs/myApp/src/img` | Matching is case sensitive
 `up /` | `/` | Looking for root simply jumps to the root
