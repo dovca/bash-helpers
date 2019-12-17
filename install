@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "alias up=\". ${PWD}/up/up.sh\"" >> ~/.bashrc
+echo "alias up=\". ${PWD}/up/up.sh\"" >> ~/.bash_profile
 #=================================
 echo "Please, reset your shell to use the helpers."
